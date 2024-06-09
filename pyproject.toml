@@ -6,7 +6,13 @@ authors = ["lef8 <alan.sipiorski14@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = ">=3.9, <3.10"
+tensorflow = "^2.7.0"
+matplotlib = "^3.9.0"
+numpy = "^1.26.4"
+tensorflow-datasets = "4.7.0"
+chardet = "^5.2.0"
+requests = "^2.32.3"
 
 
 [build-system]
