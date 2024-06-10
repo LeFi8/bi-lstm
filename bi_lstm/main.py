@@ -11,11 +11,7 @@ user_input = input('Enter the review: ')
 
 while user_input != 'exit':
 	# Making predictions 
-	sample_text = (
-		'''The movie by GeeksforGeeks was so good and the animation are so dope. 
-		I would recommend my friends to watch it.'''
-	)
-	predictions = loaded_model.predict(np.array([sample_text]))
+	predictions = loaded_model.predict(np.array([user_input]))
 	print(*predictions[0])
 
 	# Print the label based on the prediction 
